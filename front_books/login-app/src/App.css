@@ -1,0 +1,527 @@
+/* Global Styles */
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif; /* Elegance with serif fonts */
+  background-color: #f9f6ed; /* Warm beige background */
+  color: #333;
+ /* Add your book-related image here */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  background-blend-mode: overlay; /* Optional: Blends the image with the background color */
+}
+
+/* Rest of your existing CSS remains unchanged */
+a {
+  color: #7b5e42; /* Rich brown for links */
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+a:hover {
+  text-decoration: underline;
+  color: #5c462d; /* Darker brown on hover */
+}
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Input Fields with Shadows and Focus Effects */
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fffdf5; /* Soft cream background */
+}
+input:focus,
+textarea:focus {
+  border-color: #7b5e42; /* Rich brown on focus */
+  box-shadow: 0 0 8px rgba(123, 94, 66, 0.5); /* Outer glow on focus */
+  outline: none;
+}
+
+/* Login Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f6ed; /* Warm beige background */
+  background-image: url('c:\Users\gutsu\Downloads\WhatsApp Image 2025-02-11 à 17.06.53_8f0ffa84.jpg');
+}
+.login-form {
+  background: #fffdf5; /* Soft cream background */
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-02-11 à 18.22.28_c7407e9c.jpg');
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  width: 300px;
+  text-align: center;
+}
+.login-form h2 {
+  margin-bottom: 1rem;
+  color: black; /* Rich brown for headings */
+}
+
+.login-form button {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #0e0d0c; /* Rich brown for buttons */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.login-form button:hover {
+  background-color: #070606; /* Darker brown on hover */
+  transform: scale(1.02); /* Slight zoom effect */
+}
+.links {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.links a {
+  color: #131211; /* Rich brown for links */
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+.links a:hover {
+  text-decoration: underline;
+}
+.error {
+  color: #d9534f; /* Red for errors */
+  margin-bottom: 1rem;
+}
+
+/* Register Styles */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f6ed; /* Warm beige background */
+  background-image: url('c:\Users\gutsu\Downloads\WhatsApp Image 2025-02-11 à 17.06.53_8f0ffa84.jpg');
+}
+.register-form {
+  background: #fffdf5; /* Soft cream background */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  width: 350px;
+  text-align: center;
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-02-11 à 18.22.28_c7407e9c.jpg');
+}
+.register-form h2 {
+  margin-bottom: 1rem;
+  color: #111110; /* Rich brown for headings */
+}
+/* Header Styles */
+.header {
+  background-color: #1a73e8; /* Bright blue */
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light overlay on hover */
+}
+.register-form button {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #0a0a0a; /* Rich brown for buttons */
+  color: rgb(248, 243, 243);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.register-form button:hover {
+  background-color: #141413; /* Darker brown on hover */
+  transform: scale(1.02); /* Slight zoom effect */
+}
+.register-form a {
+  color: #11100f; /* Rich brown for links */
+  text-decoration: none;
+  margin-top: 1rem;
+  display: block;
+}
+.register-form a:hover {
+  text-decoration: underline;
+}
+
+/* Forgot Password Styles */
+.forgot-password-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0a0a0a; /* Warm beige background */
+  background-image: url('c:\Users\gutsu\Downloads\WhatsApp Image 2025-02-11 à 17.06.53_8f0ffa84.jpg');
+}
+.forgot-password-form {
+  background: #080808; /* Soft cream background */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  width: 350px;
+  text-align: center;
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-02-11 à 18.22.28_c7407e9c.jpg');
+}
+.forgot-password-form h2 {
+  margin-bottom: 1rem;
+  color: #0f0f0e; /* Rich brown for headings */
+}
+.forgot-password-form button {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #141311; /* Rich brown for buttons */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.forgot-password-form button:hover {
+  background-color: #0e0d0c; /* Darker brown on hover */
+  transform: scale(1.02); /* Slight zoom effect */
+}
+.forgot-password-form a {
+  color: #141313; /* Rich brown for links */
+  text-decoration: none;
+  margin-top: 1rem;
+  display: block;
+}
+.forgot-password-form a:hover {
+  text-decoration: underline;
+}
+
+/* Success Message */
+.success {
+  color: #5cb85c; /* Green for success messages */
+  margin-bottom: 1rem;
+}
+.error {
+  color: #d9534f; /* Red for errors */
+  margin-bottom: 1rem;
+}
+
+
+/* Root Colors Inspired by Books */
+:root {
+  --primary-color: #1b3a4b; /* Deep navy blue */
+  --secondary-color: #d63447; /* Bold red for contrast */
+  --accent-color: #f57c00; /* Warm orange for highlights */
+  --background-color: #eae7dc; /* Soft parchment color */
+  --text-color: #1e1e1e; /* Dark text for readability */
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-02-11 à 18.22.28_c7407e9c.jpg');
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  box-shadow: 2px 4px 6px var(--shadow-color);
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 4px 6px 12px var(--shadow-color);
+}
+
+/* Sidebar */
+aside {
+  background-color: var(--primary-color);
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-03-01 à 01.55.47_c308f008.jpg');
+
+  color: white;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 4px 0 8px var(--shadow-color);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+aside button {
+  width: 100%;
+  text-align: left;
+  padding: 12px;
+  border-radius: 0;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+aside button:hover {
+  background-color: var(--accent-color);
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-02-11 à 18.22.28_c7407e9c.jpg');
+
+  color: white;
+}
+
+/* Additional Sidebar Buttons */
+.sidebar-extra {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-02-11 à 18.22.28_c7407e9c.jpg');
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: white;
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-03-01 à 01.55.48_9f979de0.jpg');
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 4px 0 10px var(--shadow-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+.sidebar button {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: left;
+  color: var(--text-color);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-03-01 à 01.55.48_9f979de0.jpg');
+
+}
+
+.sidebar button:hover {
+  background: rgba(0, 123, 255, 0.1);
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-02-11 à 18.22.28_c7407e9c.jpg');
+
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-02-23 à 19.21.06_87d7ad75.jpg');
+
+  color: rgb(22, 18, 18);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 250px);
+  position: fixed;
+  top: 0;
+  left: 250px;
+  box-shadow: 0 4px 10px var(--shadow-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Main Content */
+main {
+  margin-left: 250px;
+  margin-top: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-03-01 à 01.55.48_9f979de0.jpg');
+
+  
+}
+
+/* Book Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Book Card */
+.card {
+  background: white;
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-02-23 à 19.21.06_87d7ad75.jpg');
+
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 2px 6px 12px var(--shadow-color);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 8px 16px var(--shadow-color);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.pagination button {
+  background: var(--primary-color);
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-02-11 à 18.22.28_c7407e9c.jpg');
+
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.pagination button:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  background-image: url('c:\Users\gutsu\Pictures\WhatsApp Image 2025-02-23 à 19.21.06_87d7ad75.jpg');
+
+  color: rgb(22, 19, 19);
+  text-align: center;
+  padding: 0px;
+  position: relative;
+  margin-left: 290px;
+  width: 1400px;
+  height: 300px;
+  box-shadow: 0 -2px 8px var(--shadow-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  header {
+    left: 200px;
+    width: calc(100% - 200px);
+  }
+
+  main {
+    margin-left: 200px;
+  }
+
+  footer {
+    width: calc(100% - 200px);
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  header {
+    left: 0;
+    width: 100%;
+  }
+
+  main {
+    margin-left: 0;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+

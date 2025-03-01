@@ -1,0 +1,111 @@
+/* Header Variables */
+:root {
+    --header-height: 64px;
+    --header-bg: rgba(255, 255, 255, 0.8);
+    --header-border: #e5e7eb;
+    --header-text: #1f2937;
+    --search-bg: #ffffff;
+    --search-border: #e5e7eb;
+    --search-focus: #4f46e5;
+  }
+  
+  /* Dark Mode */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --header-bg: rgba(30, 30, 45, 0.8);
+      --header-border: #2d2d3f;
+      --header-text: #a0aec0;
+      --search-bg: #1e1e2d;
+      --search-border: #2d2d3f;
+      --search-focus: #4f46e5;
+    }
+  }
+  
+  /* Header Container */
+  .header {
+    height: var(--header-height);
+    background: var(--header-bg);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--header-border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hide header on scroll down */
+  .header.hidden {
+    transform: translateY(-100%);
+  }
+  
+  /* Header Content */
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    border: 1px solid var(--search-border);
+    border-radius: 0.5rem;
+    background: var(--search-bg);
+    color: var(--header-text);
+    transition: all 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: var(--search-focus);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    outline: none;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--header-text);
+    opacity: 0.5;
+  }
+  
+  /* Mobile Header */
+  @media (max-width: 768px) {
+    .header-content {
+      padding: 0 1rem;
+    }
+  
+    .search-container {
+      max-width: none;
+    }
+  }
+  
+  /* Header Animation */
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .header {
+    animation: slideDown 0.3s ease;
+  }
+  
+  
